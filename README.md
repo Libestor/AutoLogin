@@ -17,12 +17,13 @@
 * 打包不限于exe文件
 * 打包所需要的模组：pyinstaller
 * 所需的指令：pyinstaller -F login.py
+* 最后的login.exe就是打包好的文件，只需要和information.json放在一起，然后运行就可以登录。
 
 > 打包后的文件依旧需要information.json文件
 
 ### 高阶用法：
 
-* 在windows上可以通过计划任务**检测所连接的WIFI**来判断是否需要运行程序/脚本，从而实现自动登录
+* 在windows上可以通过计划任务**检测所连接的WIFI**来判断是否需要运行程序/脚本，从而实现自动登录，文件中的login.exe就是用来实现自动登录的，当然也可以手动运行。
 * 在linux上可以使用NetworkManager来检测网络变化，从而决定是否执行脚本
 * 在安卓上，也有方法，不过一般用不到，就再没研究
 * ios上同理
