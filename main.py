@@ -2,13 +2,13 @@ try:
     from json import  dumps,loads
     from login import Login
     from re import fullmatch
-    import requests
-    import socket
+    #import requests
+    #import socket
 except ModuleNotFoundError:
     print("亲，必要的模组还没安装呢，可以在控制台输入：\n"
           "pip install  re\n"
           "pip install requests\n"
-          "pip install socket\n实现安装"
+          "实现安装"
           "并且确保文件login.php 和主程序在同一个文件夹")
     exit()
 
@@ -28,7 +28,6 @@ class Table(Login):
             "user_nat":"2",
             "login_success":0
         }
-
 
     def CheckID(self,id):
         pattern = "[0-9]{7}"
@@ -116,7 +115,7 @@ class Table(Login):
     def go(self):
         self.FileCheck()
 
-        
+
 if __name__ == "__main__":
     table = Table()
     table.go()
